@@ -1,38 +1,1252 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("./components/assets/fonts/Inter-Bold.woff2") format("woff2"), url("./components/assets/fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("./components/assets/fonts/Inter-Regular.woff2") format("woff2"), url("./components/assets/fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("./components/assets/fonts/Inter-Medium.woff2") format("woff2"), url("./components/assets/fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "Inter-Light";
+  src: url("./components/assets/fonts/Inter-Light.woff2") format("woff2"), url("./components/assets/fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+#main {
+  margin: 0;
+  background-color: #161B1C;
+  color: #fff;
+  font-family: "Inter-Regular";
+}
+#main ul {
+  list-style: none;
+}
+#main div.row{
+  margin-right: 0;
+}
+#main div.row div.column{
+  padding: 0;
+}
+#main #first {
+  height: 100%;
+  border-right: 3px solid #252C2E;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+#main #first div.top {
+  width: 50%;
+}
+#main #first div.top h1 {
+  display: block;
+}
+#main #first div.top h1 a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #2B6BC5;
+}
+#main #first div.top h1 a img {
+  display: block;
+  width: 100%;
+}
+#main #first div.middle {
+  width: 100%;
+}
+#main #first div.middle div.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  width: 100%;
+}
+#main #first div.middle div.list div:first-child img {
+  width: 50px;
+}
+#main #first div.middle div.list div img {
+  display: block;
+  width: 32px;
+  margin: auto;
+}
+#main #first div.bottom div.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+}
+#main #first div.bottom div.list div:last-child img {
+  width: 58px;
+  border-radius: 50%;
+}
+#main #first div.bottom div.list div:first-child img {
+  width: 58px;
+  background-color: #838788;
+  padding: 18px;
+  border-radius: 50%;
+}
+#main #second {
+  height: 100%;
+  border-right: 3px solid #252C2E;
+  padding: 0px;
+}
+#main #second div.top {
+  border-bottom: 1px solid #252C2E;
+  padding: 11px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #second div.top div.left {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 64%;
+}
+#main #second div.top div.left div.image h1 img {
+  width: 56px;
+  border-radius: 50%;
+}
+#main #second div.top div.left div.content {
+  margin-top: 10px;
+}
+#main #second div.top div.left div.content h1 {
+  font-size: 18px;
+  font-family: "Inter-Bold";
+}
+#main #second div.top div.left div.content p {
+  font-family: "Inter-Medium";
+  font-size: 13px;
+  color: #838788;
+}
+#main #second div.top div.right a img {
+  width: 54px;
+  padding: 10px;
+  border: 3px solid #252C2E;
+  border-radius: 50%;
+}
+#main #second div.middle div.top {
+  border: none;
+  padding: 6px 10px;
+}
+#main #second div.middle div.top form {
+  display: block;
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background: #202427;
+}
+#main #second div.middle div.top form img {
+  width: 20px;
+  margin-right: 20px;
+}
+#main #second div.middle div.top form input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #424647;
+}
+#main #second div.middle div.bottom {
+  padding: 0px 15px;
+}
+#main #second div.middle div.bottom div.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #second div.middle div.bottom div.head h1 {
+  font-family: "Inter-Medium";
+  font-size: 18px;
+}
+#main #second div.middle div.bottom div.head a {
+  font-size: 13px;
+  color: #424647;
+  font-family: "Inter-Medium";
+}
+#main #second div.middle div.bottom div.head a img {
+  width: 20%;
+  margin-bottom: 2px;
+}
+#main #second div.middle div.bottom div.list {
+  margin-top: 10px;
+}
+#main #second div.middle div.bottom div.list ul {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #second div.middle div.bottom div.list ul li {
+  text-align: center;
+  width: 16%;
+  position: relative;
+}
+#main #second div.middle div.bottom div.list ul li img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+#main #second div.middle div.bottom div.list ul li span.omline {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #2B6BC5;
+  border: 1px solid #252C2E;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#main #second div.middle div.bottom div.list ul li a {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #424647;
+  font-family: "Inter-Medium";
+}
+#main #second div.bottom {
+  padding: 0px 15px;
+  position: relative;
+}
+#main #second div.bottom h1 {
+  display: inline-block;
+  font-family: "Inter-Medium";
+  font-size: 18px;
+  margin-top: 5px;
+}
+#main #second div.bottom p {
+  display: inline-block;
+  font-size: 10px;
+  padding: 1px 6px;
+  background: #2B6BC5;
+  border-radius: 50px;
+}
+#main #second div.bottom div.items div.item {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#main #second div.bottom div.items div.item div.left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+#main #second div.bottom div.items div.item div.left div.img {
+  width: 22%;
+  position: relative;
+}
+#main #second div.bottom div.items div.item div.left div.img span.Online {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #2B6BC5;
+  border: 1px solid #252C2E;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#main #second div.bottom div.items div.item div.left div.img img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+#main #second div.bottom div.items div.item div.left div.img img:hover {
+  cursor: pointer;
+}
+#main #second div.bottom div.items div.item div.left div.content {
+  text-align: left;
+  margin-left: 20px;
+}
+#main #second div.bottom div.items div.item div.left div.content h1 {
+  display: block;
+  font-size: 14px;
+  margin-left: 5px;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 12px;
+}
+#main #second div.bottom div.items div.item div.left div.content p {
+  background: none;
+  color: #838788;
+}
+#main #second div.bottom div.items div.item div.left div.content p.typing {
+  color: #2B6BC5;
+}
+#main #second div.bottom div.items div.item div.right img {
+  width: 20%;
+}
+#main #second div.bottom div.items div.item div.right p {
+  background: none;
+  color: #424647;
+  font-size: 12px;
+}
+#main #second div.bottom div.big {
+  display: none;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 80px;
+  right: 8px;
+  z-index: 1;
+  width: 96%;
+  background: rgba(0, 0, 0, 0.6);
+}
+#main #second div.bottom div.big div {
+  position: relative;
+}
+#main #second div.bottom div.big div img {
+  display: block;
+  width: 100%;
+  border: 3px solid #296873;
+  border-radius: 20px;
+}
+#main #second div.bottom div.big div img.cancel {
+  width: 40px;
+  border: none;
+  background: rgba(22, 27, 28, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+#main #second div.bottom div.big div img.cancel:hover {
+  cursor: pointer;
+}
+#main #second div.bottom div.big.active {
+  display: block;
+}
+#main #third {
+  height: 100%;
+  padding: 0;
+  border-right: 3px solid #252C2E;
+}
+#main #third div.top {
+  padding: 4px 24px 10px;
+  border-bottom: 3px solid #252C2E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #third div.top div.left {
+  width: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #third div.top div.left div.img img {
+  display: block;
+  width: 58px;
+  border-radius: 50%;
+}
+#main #third div.top div.left div.content h1 {
+  margin-top: 14px;
+  font-size: 18px;
+  font-family: "Inter-Bold";
+}
+#main #third div.top div.left div.content p {
+  font-family: "Inter-Medium";
+  font-size: 13px;
+  color: #2B6BC5;
+}
+#main #third div.top div.right ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #third div.top div.right ul li {
+  width: 35%;
+  margin-right: 8px;
+}
+#main #third div.top div.right ul li a {
+  display: block;
+}
+#main #third div.top div.right ul li a img {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #424647;
+}
+#main #third div.top div.right ul li:last-child {
+  display: none;
+  cursor: pointer;
+}
+#main #third div.middle {
+  background: #0A0E0F;
+  padding: 10px 15px;
+}
+#main #third div.middle h4 {
+  font-size: 12.5px;
+  text-align: center;
+}
+#main #third div.middle div.items {
+  position: relative;
+}
+#main #third div.middle div.items div.item {
+  display: inline-block;
+}
+#main #third div.middle div.items div.item h5 {
+  display: inline-block;
+  font-size: 13px;
+  padding: 12px;
+  color: #838788;
+  background: #252C2E;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#main #third div.middle div.items div.item h5 div.top {
+  margin: 0;
+  background: #202427;
+  padding: 10px;
+  width: 200px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #third div.middle div.items div.item h5 div.top:hover {
+  cursor: pointer;
+}
+#main #third div.middle div.items div.item h5 div.top img {
+  width: 10%;
+}
+#main #third div.middle div.items div.item h5 div.top p {
+  font-size: 14px;
+  font-family: "Inter-Medium";
+  color: #9d9a9a;
+}
+#main #third div.middle div.items div.item h5 div.bottom {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #third div.middle div.items div.item h5 div.bottom p {
+  margin: 0;
+  color: #9d9a9a;
+  font-size: 10px;
+}
+#main #third div.middle div.items div.item:nth-child(5) h5 {
+  padding: 8px;
+}
+#main #third div.middle div.items div.item p {
+  margin: 0;
+  font-size: 10px;
+  text-align: right;
+  color: #424647;
+}
+#main #third div.middle div.items div.item div.top {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#main #third div.middle div.items div.item div.top div.left {
+  min-width: 50%;
+}
+#main #third div.middle div.items div.item div.top div.right {
+  margin-left: 10px;
+}
+#main #third div.middle div.items div.item div.top div.right ul li a {
+  width: 14px;
+  background: #252C2E;
+  border-radius: 50%;
+}
+#main #third div.middle div.items div.item div.top div.right ul li a img {
+  display: block;
+  padding: 0;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+#main #third div.middle div.items div.item div.top div.right a img {
+  margin-top: 30px;
+  width: 20%;
+}
+#main #third div.middle div.items div.item div.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  border: none;
+}
+#main #third div.middle div.items div.item div.bottom ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #third div.middle div.items div.item div.bottom ul li:first-child {
+  margin-right: 4px;
+}
+#main #third div.middle div.items div.item div.bottom ul li img {
+  background: #252C2E;
+  padding: 6px;
+  width: 22px;
+  border-radius: 50%;
+}
+#main #third div.middle div.items div.item.blue {
+  display: inline-block;
+  min-width: 50%;
+  margin-left: 50%;
+  text-align: right;
+}
+#main #third div.middle div.items div.item.blue h5 {
+  background: #48A5C3;
+  color: #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0px;
+  margin-bottom: 6px;
+  text-align: left;
+}
+#main #third div.middle div.items div.item.blue div.bottom {
+  display: block;
+  text-align: left;
+}
+#main #third div.middle div.items div.item.blue div.bottom p {
+  margin-left: 4px;
+  display: inline-block;
+}
+#main #third div.middle div.items div.item.blue div.bottom img {
+  width: 14%;
+}
+#main #third div.middle div.items div.item.blue div.bottom.right {
+  margin-left: 54%;
+}
+#main #third div.bottom {
+  border-top: 3px solid #252C2E;
+}
+#main #third div.bottom div.content {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #third div.bottom div.content div.upload{
+  position: relative;
+  width: 30px;
+}
+#main #third div.bottom div.content div.upload input{
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+#main #third div.bottom div.content div.cancel{
+  text-align: center;
+}
+#main #third div.bottom div.content div.cancel p{
+  font-size: 10px;
+  color: #dc1616;
+}
+#main #third div.bottom div.content form {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin: 0 24px;
+  background: #202427;
+  position: relative;
+}
+#main #third div.bottom div.content form a {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  background: #2e3537;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  right: 8px;
+}
+#main #third div.bottom div.content form a img {
+  display: block;
+  width: 100%;
+}
+#main #third div.bottom div.content form input {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #296873;
+  outline: none;
+}
+#main #last {
+  height: 100%;
+  padding: 0;
+}
+#main #last div.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #252C2E;
+  padding: 25px 18px;
+}
+#main #last div.top h1 {
+  font-size: 18px;
+  font-family: "Inter-Bold";
+}
+#main #last div.top a {
+  display: inline-block;
+  width: 15%;
+}
+#main #last div.top a img {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid #424647;
+}
+#main #last div.profile {
+  text-align: center;
+}
+#main #last div.profile img {
+  width: 90px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+#main #last div.profile h1 {
+  font-size: 18px;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+#main #last div.profile p {
+  color: #2B6BC5;
+  font-size: 14px;
+}
+#main #last div.media {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main #last div.media div.top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding: 0 30px 10px;
+}
+#main #last div.media div.top div.left {
+  display: flex;
+  width: 46%;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #last div.media div.top div.left h1 {
+  font-family: Inter-Medium;
+  font-size: 18px;
+  margin: 0;
+}
+#main #last div.media div.top div.left p {
+  margin: 0;
+  display: inline-block;
+  color: #424647;
+  font-size: 12px;
+}
+#main #last div.media div.top div.right {
+  display: inline-block;
+  text-align: right;
+}
+#main #last div.media div.top div.right a {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+}
+#main #last div.media div.bottom {
+  display: block;
+}
+#main #last div.media div.bottom ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+#main #last div.media div.bottom ul li {
+  display: block;
+  width: 36%;
+  padding: 10px;
+}
+#main #last div.media div.bottom ul li a {
+  display: block;
+  width: 100%;
+}
+#main #last div.media div.bottom ul li a img {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+}
+#main #last div.media div.bottom ul li:last-child a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: #2e3537;
+  text-decoration: none;
+  color: #fff;
+  justify-content: space-around;
+  border-radius: 16px;
+}
+#main #last div.files div.top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+#main #last div.files div.top div.left {
+  display: flex;
+  width: 34%;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #last div.files div.top div.left h1 {
+  font-family: Inter-Medium;
+  font-size: 18px;
+  margin: 0;
+}
+#main #last div.files div.top div.left p {
+  margin: 0;
+  display: inline-block;
+  color: #424647;
+  font-size: 12px;
+}
+#main #last div.files div.top div.right {
+  display: inline-block;
+  text-align: right;
+}
+#main #last div.files div.top div.right a {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+}
+#main #last div.files div.bottom div.item {
+  display: block;
+  padding: 0px 50px;
+  margin-bottom: 5px;
+}
+#main #last div.files div.bottom div.item h5 {
+  display: inline-block;
+  font-size: 13px;
+  padding: 12px;
+  color: #838788;
+  background: #252C2E;
+  border-radius: 10px;
+  margin: 0;
+}
+#main #last div.files div.bottom div.item h5 div.top {
+  margin: 0;
+  background: #202427;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #last div.files div.bottom div.item h5 div.top:hover {
+  cursor: pointer;
+}
+#main #last div.files div.bottom div.item h5 div.top img {
+  width: 10%;
+}
+#main #last div.files div.bottom div.item h5 div.top p {
+  font-size: 14px;
+  font-family: "Inter-Medium";
+  color: #9d9a9a;
+}
+#main #last div.files div.bottom div.item h5 div.bottom {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #last div.files div.bottom div.item h5 div.bottom p {
+  margin: 0;
+  color: #9d9a9a;
+  font-size: 10px;
+}
+#main #last div.files div.bottom div.item p {
+  margin: 0;
+  font-size: 10px;
+  text-align: right;
+  color: #424647;
+}
+#main #cancel{
+  text-align: center;
+  margin-top: 300px;
+}
+#main #cancel a{
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (min-width: 1280px) {
+  #main #second div.top div.left div.content h1 {
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
+  #main #third div.top div.left div.content {
+    margin-left: 10px;
+  }
+  #main #third div.middle div.items div.item div.top div.right ul li:last-child {
+    display: block;
+    margin-left: 0;
+  }
+}
+@media all and (max-width: 1280px) {
+  #main #second div.top div.left div.content h1 {
+    font-size: 14px;
+  }
+  #main #third div.top div.left div.content {
+    margin-left: 10px;
+  }
+  #main #third div.middle div.items div.item div.top div.right ul li:last-child {
+    display: block;
+    margin-left: 0;
+  }
+
+}
+@media all and (max-width: 1200px) {
+  #main #second div.top div.left div.content h1 {
+    font-size: 10px;
+  }
+  #main #second div.top div.left div.content p {
+    font-size: 8px;
+  }
+}
+@media all and (max-width: 991px) {
+  #last {
+    display: none;
+  }
+}
+@media all and (max-width: 980px) {
+  #main #second div.top div.left div.image h1 img {
+    width: 46px;
+  }
+  #main #second div.top div.left div.content h1 {
+    font-size: 10px;
+  }
+  #main #second div.top div.left div.content p {
+    font-size: 10px;
+  }
+  #main #second div.top div.right a img {
+    width: 46px;
+  }
+  #main #second div.bottom div.items div.item div.left div.img span.Online {
+    width: 10px;
+    height: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content {
+    margin-left: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content h1 {
+    font-size: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content p {
+    font-size: 7px;
+  }
+  #main #last {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  #main #first div.top {
+    width: 80%;
+  }
+  #main #second div.top {
+    padding: 20px 10px;
+  }
+  #main #second div.top div.left div.image h1 img {
+    width: 44px;
+  }
+  #main #second div.top div.left div.content h1 {
+    font-size: 12px;
+  }
+  #main #second div.top div.left div.content p {
+    font-size: 10px;
+  }
+  #main #second div.top div.right a img {
+    width: 46px;
+  }
+  #main #second div.middle div.top form img {
+    margin-right: 0px;
+  }
+  #main #second div.middle div.top form input {
+    font-size: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.img {
+    width: 28%;
+  }
+  #main #second div.bottom div.items div.item div.left div.img span.Online {
+    width: 10px;
+    height: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content {
+    margin-left: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content h1 {
+    font-size: 12px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content p {
+    font-size: 8px;
+  }
+  #main #second div.bottom div.items div.item div.right p {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 680px) {
+  #main #first div.middle div.list div img {
+    width: 20px;
+  }
+  #main #first div.middle div.list div:first-child img {
+    width: 40px;
+  }
+  #main #first div.bottom div.list div:first-child img {
+    width: 36px;
+    padding: 10px;
+  }
+  #main #first div.bottom div.list div:last-child img {
+    width: 40px;
+  }
+  #main #second div.top {
+    padding: 20px 10px;
+  }
+  #main #second div.top div.left div.image h1 img {
+    width: 36px;
+  }
+  #main #second div.top div.left div.content h1 {
+    font-size: 8px;
+  }
+  #main #second div.top div.left div.content p {
+    font-size: 10px;
+  }
+  #main #second div.top div.right a img {
+    width: 46px;
+  }
+  #main #second div.middle div.top form img {
+    width: 10px;
+    margin-right: 0px;
+  }
+  #main #second div.middle div.top form input {
+    font-size: 8px;
+  }
+  #main #second div.middle div.bottom div.head a {
+    font-size: 10px;
+  }
+  #main #second div.middle div.bottom div.list ul li span.omline {
+    width: 10px;
+    height: 10px;
+  }
+  #main #second div.middle div.bottom div.list ul li a {
+    font-size: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.img {
+    width: 40%;
+  }
+  #main #second div.bottom div.items div.item div.left div.img img {
+    width: 34px;
+  }
+  #main #second div.bottom div.items div.item div.left div.img span.Online {
+    width: 10px;
+    height: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content {
+    margin-left: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content h1 {
+    font-size: 8px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content p {
+    font-size: 6px;
+  }
+  #main #second div.bottom div.items div.item div.right img {
+    width: 15%;
+  }
+  #main #second div.bottom div.items div.item div.right p {
+    font-size: 8px;
+  }
+  #main #third div.top div.left div.content {
+    margin-left: 10px;
+  }
+  #main #third div.top div.right ul {
+    justify-content: right;
+  }
+  #main #third div.top div.right ul li {
+    width: 26%;
+    margin-right: 5px;
+  }
+  #main #third div.middle div.items div.item h5 {
+    font-size: 10px;
+  }
+  #main #third div.middle div.items div.item h5 div.top p {
+    font-size: 12px;
+  }
+  #main #third div.middle div.items div.item:last-child {
+    display: none;
+  }
+}
+@media all and (max-width: 575px) {
+  #main {
+    position: relative;
+  }
+  #main #first {
+    display: none;
+  }
+  #main #second.nonActive {
+    display: none;
+  }
+  #main #second div.top {
+    padding: 20px 10px;
+  }
+  #main #second div.top div.left {
+    justify-content: left;
+  }
+  #main #second div.top div.left div.image h1 img {
+    width: 60px;
+  }
+  #main #second div.top div.left div.content {
+    margin-left: 20px;
+  }
+  #main #second div.top div.left div.content h1 {
+    font-size: 20px;
+  }
+  #main #second div.top div.left div.content p {
+    font-size: 10px;
+  }
+  #main #second div.top div.right a img {
+    width: 40px;
+  }
+  #main #second div.middle div.top form img {
+    width: 20px;
+    margin-right: 14px;
+  }
+  #main #second div.middle div.top form input {
+    font-size: 15px;
+  }
+  #main #second div.middle div.bottom div.head a {
+    font-size: 10px;
+  }
+  #main #second div.middle div.bottom div.list ul li {
+    width: 13%;
+  }
+  #main #second div.middle div.bottom div.list ul li span.omline {
+    width: 14px;
+    height: 14px;
+  }
+  #main #second div.middle div.bottom div.list ul li a {
+    font-size: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.img {
+    width: 17%;
+  }
+  #main #second div.bottom div.items div.item div.left div.img img {
+    width: 60px;
+  }
+  #main #second div.bottom div.items div.item div.left div.img span.Online {
+    width: 14px;
+    height: 14px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content {
+    margin-left: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content h1 {
+    font-size: 15px;
+  }
+  #main #second div.bottom div.items div.item div.left div.content p {
+    font-size: 10px;
+  }
+  #main #second div.bottom div.items div.item div.right img {
+    width: 20%;
+  }
+  #main #second div.bottom div.items div.item div.right p {
+    font-size: 10px;
+  }
+  #main #second div.bottom div.big div img {
+    width: 86%;
+  }
+  #main #third {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  #main #third.active {
+    display: block;
+  }
+  #main #third.none {
+    display: none;
+  }
+  #main #third div.top {
+    margin-top: 0;
+    background: #202427;
+  }
+  #main #third div.top div.left div.content {
+    margin-left: 10px;
+  }
+  #main #third div.top div.right ul {
+    justify-content: right;
+  }
+  #main #third div.top div.right ul li {
+    width: 20%;
+    margin-right: 10px;
+  }
+  #main #third div.top div.right ul li:last-child {
+    display: block;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  #main #third div.middle div.items div.item div.top {
+    background: none;
+  }
+  #main #third div.middle div.items div.item div.bottom {
+    background: none;
+  }
+  #main #third div.middle div.items div.item:last-child {
+    display: block;
+  }
+  #main #third div.bottom {
+    padding-bottom: 3px;
+    background: #202427;
+  }
+}
+@media all and (max-width: 480px) {
+  #main #second div.bottom div.items div.item div.left div.img {
+    width: 22%;
+  }
+  #main #second div.bottom div.items div.item div.left div.img img {
+    width: 60px;
+  }
+  #main #second div.bottom div.items div.item div.left div.img span.Online {
+    width: 14px;
+    height: 14px;
+  }
+  #main #third div.top div.right ul li {
+    width: 18%;
+    margin-right: 10px;
+  }
+  #main #third div.top div.right ul li a img {
+    padding: 4px;
+  }
+  #main #third div.top div.right ul li:last-child {
+    display: block;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  #main #third div.middle div.items div.item h5 {
+    font-size: 14px;
+  }
+  #main #third div.bottom {
+    padding-bottom: 0;
+  }
+}
+@media all and (max-width: 360px) {
+  #main #second div.top div.left div.content {
+    margin-left: 20px;
+  }
+  #main #second div.top div.left div.content h1 {
+    font-size: 18px;
+  }
+  #main #second div.top div.left div.content p {
+    font-size: 10px;
+  }
+  #main #third div.top div.right ul li {
+    width: 14%;
+    margin-right: 10px;
+  }
+  #main #third div.top div.right ul li a img {
+    padding: 4px;
+  }
+  #main #third div.top div.right ul li:last-child {
+    display: block;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  #main #third div.middle div.items div.item h5 {
+    font-size: 12px;
+  }
+  #main #third div.bottom div.content {
+    justify-content: space-around;
+  }
+  #main #third div.bottom div.content form {
+    width: 56%;
+    margin: 0 16px;
+  }
+  #main #third div.bottom div.content form input {
+    font-size: 12px;
+  }
+  #main #third div.bottom div.content a img {
+    width: 16px;
+  }
+}
+@media all and (max-width: 320px) {
+  #main #second div.top div.left div.content {
+    margin-left: 20px;
+  }
+  #main #second div.top div.left div.content h1 {
+    font-size: 14px;
+  }
+  #main #second div.top div.left div.content p {
+    font-size: 10px;
+  }
+  #main #second div.middle div.bottom div.list ul li span.omline {
+    width: 10px;
+    height: 10px;
+  }
+  #main #second div.bottom div.items div.item div.left div.img {
+    width: 30%;
+  }
+  #main #second div.bottom div.big div img {
+    width: 86%;
+  }
+  #main #third div.top div.left div.img img {
+    width: 42px;
+  }
+  #main #third div.top div.left div.content h1 {
+    font-size: 14px;
+  }
+  #main #third div.top div.left div.content p {
+    font-size: 10px;
+  }
+  #main #third div.middle div.items div.item h5 {
+    font-size: 10px;
   }
 }
